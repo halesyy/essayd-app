@@ -1,0 +1,19 @@
+DirectoryIndex entry.php
+
+RewriteEngine on
+RewriteBase /
+#RewriteCond %{REQUEST_FILENAME} \.(?:js)$ [NC]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ entry.php?/$1 [L]
+
+#RewriteCond %{REQUEST_FILENAME} !.(ico,js,jpg,gif,png)$
+#RewriteCond $1 !^(entry\.php|robots\.txt)
+
+#Redirection code starts
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#Redirection code Ends
+
+RewriteRule ^/?\.ftpconfig$ - [F,L]

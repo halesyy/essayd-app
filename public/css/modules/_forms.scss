@@ -1,0 +1,38 @@
+/*
+ * | All modal and input related components,
+ * | aiming to give a plethora of styles to
+ * | as many input-derived elements as we can.
+ */
+
+
+  input {
+
+      width: 100%;
+      border: 0;
+      font-family: 'Roboto', Arial;
+      padding: 10px;
+
+      &:focus {
+          outline-width: 0;
+      }
+
+  }
+
+  input[type="text"], input[type="password"], input[type="email"] {
+
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: solid silver 1px;
+
+  }
+
+  input[type="submit"] {
+
+  }
+
+  .label {
+
+      color: black;
+      padding-bottom: 4px;
+
+  }

@@ -1,0 +1,36 @@
+/*
+| CSS FILE FOR DISPLAY OF ERRORS AND ETC...
+*/
+
+.jek-error-log
+  {
+    margin:  20px;
+
+    border: solid silver 1px;
+    border-radius: 5px;
+    width:  50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  .jek-error-title h1
+  {
+    padding: 20px;
+    margin: 0;
+  }
+.jek-error-title
+  {
+    font-weight: bold;
+    font-family: Arial, Verdana;
+
+    background-color: #e0e0e0;
+  }
+.jek-error-msg
+  {
+    padding: 10px 20px 10px 20px;
+    font-family: Arial;
+  }
+.jek-error-top
+  {
+    padding: 10px 20px 10px 20px;
+    font-family: Arial, Verdana;
+  }

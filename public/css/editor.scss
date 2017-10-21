@@ -1,0 +1,27 @@
+@import 'modules/colors';
+@import 'bootstrapping/init';
+@import 'classes';
+
+/*
+ * | Flow of SCSS file is as follows:
+ * | - Header styling
+ * | - Left and Right container styling
+ * | -
+ */
+
+body {
+  background:  #f4f4f4;
+  font-family: 'Proxima Nova', Arial !important;
+}
+
+@import 'modules/header';
+
+@import 'modules/containers';
+
+@import 'modules/editor';
+
+@import 'modules/forms';
+
+@import 'modules/bootstrap_rewrites';
+
+@import 'modules/modal_areas';

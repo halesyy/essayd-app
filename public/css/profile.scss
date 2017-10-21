@@ -1,0 +1,59 @@
+@import 'bootstrapping/init';
+@import 'modules/colors';
+@import 'modules/bootstrap_rewrites';
+@import 'modules/forms';
+@import 'classes';
+
+@import 'modules/essay_classes';
+
+body {
+  background: $coolblue;
+}
+
+.left-container {
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
+              rgba(0, 0, 0, 0.2)  0px 3px 1px -2px,
+              rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+
+  .image {
+    width: 100%;
+    padding-top: 100%;
+    border-bottom: solid black 3px;
+  }
+  .under {
+    background: $dark;
+    ul {
+      padding: 0;
+      margin:  0;
+      a {
+        text-decoration: none;
+        li {
+          padding: 15px 20px 15px 20px;
+          color: white;
+          background: lighten($dark, 5%);
+          border-bottom: solid lighten($dark, 10%) 1px;
+          &:hover {
+            transition: 0.5s;
+            background-color: lighten($coolblue, 10%);
+            color: white;
+          }
+        }
+      }
+    }
+    .bottom {
+      position: absolute;
+      bottom: 10px;
+    }
+  }
+}
+
+.box {
+  background-color: white;
+  padding: 20px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  font-family: 'Proxima Nova', Arial;
+  h1 {
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,26 @@
+@header-font-size = 16px
+@header-font = 'Fira Sans'
+@header-height = 50px
+@header-bgcolor = #2C333A
+@header-color = white;
+
+
+#header {
+  height: @header-height;
+  font-size: @header-font-size;
+  font-family: @header-font;
+  background-color: @header-bgcolor;
+  color: @header-color;
+}
+
+.links {
+  list-style: none;
+}
+.links li {
+  float: left;
+  padding: calc((@header-height - @header-font-size) / 2 + 4px);
+  padding-top: calc((@header-height - @header-font-size) / 2 - 4px);
+}
+.links li a {
+  font-size: @header-font-size;
+}

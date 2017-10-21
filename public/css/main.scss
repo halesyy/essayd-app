@@ -1,0 +1,67 @@
+@import 'bootstrap3/bootstrap-smallest'; //bootstrap3
+@import 'bootstrapping/init'; //defaults
+@import 'modules/colors';
+@import 'classes';
+
+$primary: #1acebc;
+
+span {
+
+    color: $primary;
+
+}
+.open {
+
+
+    h1 {
+      font-family: 'Raleway', Arial;
+      font-size: 100px;
+      margin-bottom: 0;
+      margin-top: 0;
+      color: #666;
+      line-height: 1;
+      // padding: 70px 20px 0 20px;
+    }
+    .beam {
+      background-color: rgba(255, 255, 255, 0.9);
+      width: 70%;
+      margin-left: 15%;
+      border-right: dashed darkgrey 1px;
+      border-left:  dashed darkgrey 1px;
+      hr {
+        margin-top: 40px;
+        width: 60%;
+        border-top: solid lightgrey 1px;
+      }
+    }
+    .blurb {
+      font-family: 'Roboto', Arial;
+      color: #444;
+      line-height: 1.4;
+      width: 50%;
+      margin-left: 25%;
+      font-size: 20px;
+      padding: 25px 0 25px 0;
+      text-align: justify;
+    }
+    button {
+      font-size: 20px;
+      font-family: 'Lato', Arial;
+      padding: 10px 20px 10px 20px;
+      margin-top: 20px;
+      color: white;
+      height: 50px;
+    }
+
+    text-align: center;
+    background: -webkit-linear-gradient( left top, $coolblue, darken($coolblue, 10%) );
+    // background: $coolblue;
+
+
+}
+.slideto {
+  display: none;
+}
+.segment {
+
+}

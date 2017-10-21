@@ -1,0 +1,60 @@
+@import 'bootstrapping/init';
+@import 'modules/colors';
+@import 'modules/bootstrap_rewrites';
+@import 'modules/forms';
+@import 'classes';
+
+@import 'modules/essay_classes';
+
+body {
+  background: $coolblue;
+}
+
+
+.header {
+
+    background: white;
+    padding: 20px;
+    margin-left: 10px;
+
+    h1 {
+      font-family: 'Proxima Nova', Arial;
+    }
+
+}
+
+.dashboard-container {
+    .picture {
+        box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
+                    rgba(0, 0, 0, 0.2)  0px 3px 1px -2px,
+                    rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+
+        padding-top: calc(100% - 20px); /* 1:1 Aspect Ratio */
+
+        width: calc(100% - 20px);
+        margin: 20px 10px 10px 10px;
+        border-radius: 4px;
+        border: solid $dashboard_dark 4px;
+        transition: height 0.1s;
+
+        background-size: cover;
+    }
+    .box {
+      margin: 10px 10px 10px 10px;
+      border-radius: 4px;
+      background: $dashboard_dark;
+      box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
+                  rgba(0, 0, 0, 0.2)  0px 3px 1px -2px,
+                  rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+
+
+      .section {
+        border-bottom: solid grey 1px;
+        padding: 10px;
+        color: white;
+      }
+      .last {
+        border-bottom: 0;
+      }
+    }
+}

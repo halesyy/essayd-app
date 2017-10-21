@@ -1,0 +1,55 @@
+.image {
+  background-position: center;
+  background-size: cover;
+}
+.custom-col {
+  padding: 0 !important;
+}
+.row {
+  margin: 0 !important;
+}
+.container-fluid {
+  padding: 0 !important;
+}
+.clear {
+  clear: both;
+}
+.custom-alert {
+  border-radius: 0;
+  border: 0;
+}
+.success {
+  background-color: #4BB543 !important;
+}
+.danger {
+  background-color: #B33A3A !important;
+}
+.label {
+  color: white;
+  font-size: 14px;
+}
+.padding {
+  padding: 25px;
+}
+
+.nice-button {
+    font-size: 14px;
+    border: 0;
+    height: 30px;
+    padding-left:  14px;
+    padding-right: 14px;
+    border-radius: 3px;
+    margin-top: 10px;
+    background: $coolblue;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
+                rgba(0, 0, 0, 0.2)  0px 3px 1px -2px,
+                rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+
+    &:hover {
+      cursor: pointer;
+    }
+}
+.red {
+  background: #c73131;
+}

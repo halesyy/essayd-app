@@ -1,0 +1,161 @@
+/*
+ * | CSS placement for all modal-placed data to be
+ * | styled.
+ */
+
+
+ .modal-dialog {
+   max-width: 65% !important;
+   margin: 10% 17.5% 30px 17.5% !important;
+ }
+ .modal-body {
+   padding: 0 !important; /*make sure that the body is a blank canvas*/
+ }
+
+
+
+/*
+ * Login_Register.php
+ */
+
+  .rglg-title {
+      .lg-title, .rg-title {
+        font-family: 'Montserrat', Arial;
+          width: 50%;
+          float: left;
+          padding: 10px;
+          color: white;
+          text-align: center;
+          font-size: 26px;
+      }
+      .lg-title {
+          background: $login;
+          border-top-right-radius: 4px;
+      }
+      .rg-title {
+          background: $register;
+          border-top-left-radius: 4px;
+      }
+  }
+
+  .register, .login {
+      padding: 15px;
+      input[type="submit"] {
+          color: white;
+          border-radius: 4px;
+      }
+  }
+
+  .register {
+      input[type="text"], input[type="password"], input[type="email"] {
+          border-left: solid $register 4px;
+      }
+      input[type="submit"] {
+          background: $register;
+      }
+  }
+  .login {
+      input[type="text"], input[type="password"], input[type="email"] {
+          border-left: solid $login 4px;
+      }
+      input[type="submit"] {
+          background: $login;
+      }
+  }
+
+  .ggl-signin {
+      padding: 10px;
+      margin:  20px;
+      width: 100%;
+      text-align: center;
+      .text {
+          margin-bottom: 10px;
+      }
+      .g-signin2 {
+          width: 100%;
+          div {
+              margin: 0 auto;
+          }
+      }
+  }
+
+
+
+
+
+
+/*
+ * SaveEssay.php
+ */
+
+  .save-essay {
+
+      .essay_identifier {
+        font-size: 50px;
+        border-bottom-left-radius:  0;
+        border-bottom-right-radius: 0;
+        border-right: 0;
+        border-left: 0;
+        border-top: 0;
+        padding: 25px;
+        background: $coolblue;
+        color: white;
+        text-align: center;
+      }
+
+      .information {
+        font-family: 'Proxima Nova', Arial;
+        font-size: 18px;
+      }
+
+      input[type="checkbox"] {
+          display:none;
+      }
+
+      input[type="checkbox"] + label {
+          color: black;
+          cursor:pointer;
+      }
+
+      input[type="checkbox"] + label span {
+          display:inline-block;
+          width:19px;
+          height:19px;
+          margin:-2px 10px 0 0;
+          vertical-align:middle;
+          background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) left top no-repeat;
+          cursor:pointer;
+      }
+
+      input[type="checkbox"]:checked + label span {
+          background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -19px top no-repeat;
+      }
+
+  }
+
+
+
+/*
+ * Version.php
+ */
+
+  .version-container {
+
+      .v-header {
+        font-size: 50px;
+        background: $coolred;
+        color: white;
+        padding: 20px;
+      }
+
+      .explain {
+        font-size: 20px;
+        padding: 30px;
+        line-height: 1.5;
+
+        p {
+          margin-top: 10px;
+        }
+      }
+
+  }

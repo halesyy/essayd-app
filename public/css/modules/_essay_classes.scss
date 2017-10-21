@@ -1,0 +1,49 @@
+
+// Dashboard color for dashboard essay stuff
+$dashboard_dark: #142c35;
+
+.essays-preview {
+  margin-top: 20px;
+  background: whitesmoke;
+  border-radius: 4px;
+  padding: 5px !important;
+
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
+  rgba(0, 0, 0, 0.2)  0px 3px 1px -2px,
+  rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+}
+// THE BOXES FOR THE ESSAY STUFF
+// THE BOXES THE ESSAY IS IN.
+.essay-container {
+  width: calc(20% - 10px);
+  float: left;
+  margin: 5px;
+  overflow-y: hidden;
+  position: relative;
+  border: solid darken(lightgrey, 20%) 1px;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
+              rgba(0, 0, 0, 0.2)  0px 3px 1px -2px,
+              rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  .introduction {
+    padding: 10px;
+    font-size: 10px;
+  }
+  .identifier {
+    .last_edited {
+      font-weight: 400;
+      font-size: 12px;
+    }
+    padding: 10px;
+    font-family: 'Proxima Nova', Arial;
+    background: #f9f9f9;
+    font-weight: bold;
+    border-top: solid darken(lightgrey, 20%) 1px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  &:hover {
+    cursor: pointer;
+    border: solid darken(lightgrey, 30%) 1px;
+  }
+}

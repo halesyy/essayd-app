@@ -1,0 +1,55 @@
+#essay_placeholder {
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 32px;
+  font-family: 'Pacifico', cursive;
+}
+
+.col-4 img {
+  border: 5px solid black;
+}
+
+.col-4 {
+  padding-top: 150px;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 28px;
+  font-family: 'Pacifico', cursive;
+}
+
+.col-8 {
+  padding-top: 150px;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 28px;
+  font-family: 'Pacifico', cursive;
+}
+
+body, html {
+  background-image: url(http://omeletta.me/wp-content/uploads/2017/07/coloring-download-html5-page-background-color-and-html-color.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg {
+  background-image: url(http://omeletta.me/wp-content/uploads/2017/07/coloring-download-html5-page-background-color-and-html-color.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#description {
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 28px;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  /*margin: auto;
+  position: absolute;
+  top: 90%;
+  left: 300px;
+  width: 100%;*/
+}

@@ -1,0 +1,101 @@
+// Internal look colors.
+$spacing: 20px;
+$wall:    40px;
+
+// All section colors.
+$titleColor:        #c8509b;
+$introductionColor: #f2c649;
+$paragraphColor:    #7070cc;
+$conclusionColor:   #c21f1f;
+
+$colors: ("title": #c8509b) ("title":#abcabc);
+
+/*
+ * When adding a new area, like introduction, you need to add:
+ *  - padding if middle in the DEFAULT PADDING area
+ *  - color/bordercolor & titler color in custom classes
+ *  - re-state javascript functions and word counts, etc
+ */
+
+body{ overflow-x: hidden; }
+// textarea#essay_content
+#essayEditor {
+
+  &:focus, .introduction:focus, .paragraph:focus, .conclusion:focus, .title:focus {
+
+      outline-width: 0;
+
+  }
+  .titler {
+
+      letter-spacing: 3px;
+      font-size: 12px;
+      margin-bottom: -10px;
+      font-weight: bold;
+
+      #paragraphnumber {
+          letter-spacing: 1px;
+          margin-left:   -2px;
+      }
+
+  }
+
+  .titler-introduction {
+      padding-bottom: 10px;
+      color: $introductionColor;
+  }
+  .titler-title {
+      color: $titleColor;
+  }
+  .titler-paragraph {
+      padding-top: 20px;
+      color: $paragraphColor;
+      padding-left: $wall;
+  }
+  .titler-conclusion {
+      padding-top: 20px;
+      color: $conclusionColor;
+      margin-bottom: 0;
+  }
+
+  // OUTLINE WIDTH REMOVAL
+  #title, #introduction, #paragraphs, #conclusion {
+    outline-width: 0;
+  }
+  // DEFAULT PADDING
+  #title, #conclusion, #introduction {
+    padding: $spacing/2 $wall $spacing/2 $wall;
+  }
+  // LEFT-BORDER COLORS INDIVIDUAL
+  #title {
+    border-left: solid $titleColor 4px;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100%;
+    padding-top: $wall;
+  }
+  #introduction {
+    border-left: solid $introductionColor 4px;
+  }
+  #paragraphs {
+    border-left: solid $paragraphColor 4px;
+    .paragraph {
+      padding: $spacing/2 $wall $spacing/2 $wall;
+    }
+  }
+  #conclusion {
+    border-left: solid $conclusionColor 4px;
+    padding-bottom: $wall;
+  }
+  box-shadow: 0 0 0 0.75pt #d1d1d1, 0 0 3pt 0.75pt #ccc;
+  border: solid transparent 0px;
+  width: calc(100% - 40px);
+  resize: none;
+  text-align: justify;
+  margin: 20px 20px 20px 20px;
+  background-color: white;
+  font-size: 20px;
+  transition: margin 0.5s;
+  line-height: 1.5;
+  z-index: 100;
+}
