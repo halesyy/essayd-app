@@ -1,0 +1,40 @@
+#uhoh {
+  text-align: center;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+html {
+    background: url('../../images/goback.gif') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+li {
+  padding: 15px;
+  display: block;
+  color: black;
+  display: inline;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    display: inline-block;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+}
+
+body {
+  margin: 0px;
+}
